@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <!--START OF HEADER--><!--{{{-->
+  <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="google-site-verification" content="61so8-1kezcoEewPXiKjd-R6XjRZ5vRkZWTDvJ0nxRA">
+        <link href="http://bayanbox.ir/download/5288479852257857761/favicon.ico" rel="shortcut icon">
+        <head:meta></head:meta>
+        <head:script></head:script>
+        <head:style></head:style>
+    </head>
+  <!--END OF HEADER--><!--}}}-->
+<!--START OF BODY--><!--{{{-->
+  <body>
+        <!--start of cover--><!--{{{-->
+        <div class="cover">
+            <div class="look">
+                <a href="(*blog_link*)"><h1 class="nito">(*blog_title*)</h1></a>
+            </div>
+        </div>
+        <!--end of cover--><!--}}}-->
+        <!--start of category navbar--><!--{{{-->
+        <div class="category-nav">
+            <div class="container">
+                <div class="row">
+                    <box:categories>
+                        <view:categories>
+                            <div class="two columns">
+                                <a class="category-items" href="(*category_link*)">(*category_name*)</a>
+                            </div>
+                        </view:categories>
+                    </box:categories>
+                </div>
+            </div>
+        </div>
+        <!--end of category navbar--><!--}}}-->
+        <!--start of post summary--><!--{{{-->
+        <div class="container">
+            <div class="row">
+                <div class="eight columns">
+                    <box:post_list>
+                        <view:post_list>
+			<a style="text-decoration: none; color: black;" href="(*post_link*)">
+                            <div class="content" style="box-shadow: 0 3px 5px #2e1c22;">
+                                <div class="post-title" style="border-bottom: unset; margin-bottom: 10px;">
+                                    (*post_title*)
+				<i>⇽</i>
+                                </div>
+                            </div>
+			</a>
+                        </view:post_list>
+                    </box:post_list>
+        <!--end of post summary--><!--}}}-->
+                    <!--start of pagination--><!--{{{-->
+                    <box:pagination>
+                        <span class="pagination">
+                            <div class="container">
+                                <div class="row">
+                                    <check:if page_prev>
+                                        <div class="six columns" style="float: right;">
+                                            <a href="(*page_prev*)" class="pagePrev"><i>↣</i>مطالب جدید‌تر</a>
+                                        </div>
+                                    </check:if>
+                                    <check:if page_next>
+                                        <div class="five columns" style="float: left;">
+                                            <a href="(*page_next*)" class="pageNext">مطالب قدیمی‌تر<i>↢</i></a>
+                                        </div>
+                                    </check:if>
+                                </div>
+                            </div>
+                        </span>
+                    </box:pagination>
+                    <!--end of pagination--><!--}}}-->
+                    <!--start of post content--><!--{{{-->
+                    <box:post_detail>
+                        <div class="content">
+                            <div class="post-title">
+                                <a href="(*post_link*)">(*post_title*)</a>
+                            </div>
+                            <p>(*post_full_content*)</p>
+                            <box:post_tags>
+                                <div class="post-tags">
+                                    <view:post_tags>
+                                        <div class="post-tags-name">
+                                            <a href="(*tag_link*)">
+							<i class="fas fa-tag"></i>
+								(*tag_name*)
+							</a>
+                                        </div>
+                                    </view:post_tags>
+                                </div>
+                            </box:post_tags>
+                            <div class="post-details">
+                                <div class="container">
+                                    <div class="row text-center">
+                                        <div class="four columns">
+                                            <span>نویسنده:</span>
+                                            <span>(*post_author*)</span>
+                                        </div>
+                                        <div class="four columns">
+                                            <span>(*post_date format="%d %B %y"*)</span>
+                                        </div>
+                                        <div class="four columns">
+                                            <box:post_rating>
+                                                <div class="rate-box (*user_rated*)">
+                                                    <span class="rate-button-box rate-up (*user_rated_up*)" style="margin-right: 1em;">
+                                                        <div class="rateup">
+                                                            <a class="rate-button" href="(*rate_up_link*)" rel="nofollow">
+                                                              <span>
+                                                                <svg style="fill: white; height: 1em" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3,19h18c0.372,0,0.713-0.207,0.886-0.536c0.173-0.329,0.148-0.727-0.063-1.033l-9-13c-0.373-0.539-1.271-0.539-1.645,0 l-9,13c-0.212,0.306-0.236,0.704-0.063,1.033C2.287,18.793,2.628,19,3,19z"/></svg>
+                                                              </span>
+									    (*up_rates*)
+									</a>
+                                                        </div>
+                                                    </span>
+                                                    <span class="rate-button-box rate-down (*user_rated_down*)" style="margin-left: 1em;">
+                                                        <div class="ratedown">
+                                                            <a class="rate-button" href="(*rate_down_link*)" rel="nofollow">
+									    (*down_rates*)
+                                                              <span>
+                                                                <svg style="fill: white; height: 1em" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M11.178,19.569C11.364,19.839,11.672,20,12,20s0.636-0.161,0.822-0.431l9-13c0.212-0.306,0.236-0.704,0.063-1.033 C21.713,5.207,21.372,5,21,5H3C2.628,5,2.287,5.207,2.114,5.536C1.941,5.865,1.966,6.263,2.178,6.569L11.178,19.569z"/></svg>
+                                                              </span>
+									</a>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </box:post_rating>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="comments" class="post-comments">
+                            <check:if post_comment_count>
+                                <div class="post-comment-counter">
+                                    <h3>(*post_comment_count*) تا نظر داشتیم</h3>
+                                </div>
+                            </check:if>
+                            <box:post_comments>
+                                <view:post_comments>
+                                    <a name="comment-(*comment_id*)"></a>
+                                    <div class="send-comment">
+                                        <div class="question">
+                                            <div class="question-body">
+                                                <a target="_blank" href="<check:if comment_website>(*comment_website*)</check:if>"><img alt="(*comment_fullname*)" src="(*comment_avatar*)"></a>
+                                                <div class="dialogbox">
+                                                    <div class="body">
+                                                        <span class="tip tip-right"></span>
+                                                        <div class="message">
+                                                            <span>(*comment_body*)</span>
+                                                            <div class="question-name">(*comment_fullname*)</div>
+                                                            <div class="question-date">(*comment_date*)</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <check:if comment_reply>
+                                        <div class="answer">
+                                            <img alt="(*comment_reply_avatar*)" src="(*comment_reply_avatar*)">
+                                            <div class="dialogbox">
+                                                <div class="body">
+                                                    <span class="tip tip-left"></span>
+                                                    <div class="message">
+                                                        <span>پاسخ</span>
+                                                        <p>(*comment_reply_text*)</p>
+                                                        <div class="question-name">(*comment_reply_fullname*)</div>
+                                                        <div class="question-date">(*comment_reply_date*)</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </check:if>
+                                </view:post_comments>
+                            </box:post_comments>
+                        </div>
+                        <check:if post_has_send_comment>
+                            <div class="comment-add-form">(*comment_add_form*)</div>
+                        </check:if>
+                    </box:post_detail>
+                    <!--end of post content--><!--}}}-->
+                    <!--start of page content--><!--{{{-->
+                    <box:page_detail>
+                        <div class="content">
+                            <div class="post-title">
+                                <a href="(*page_link*)">(*page_title*)</a>
+                            </div>
+                            <p>(*page_content*)</p>
+                        </div>
+                        <div id="comments" class="post-comments">
+                            <check:if page_comment_count>
+                                <div class="post-comment-counter">
+                                    <h3>(*page_comment_count*) تا نظر داشتیم</h3>
+                                </div>
+                            </check:if>
+                            <box:page_comments>
+                                <view:page_comments>
+                                    <a name="comment-(*comment_id*)"></a>
+                                    <div class="send-comment">
+                                        <div class="question">
+                                            <div class="question-head">
+                                                <div class="question-links">
+                                                    <check:if comment_email>
+                                                        <a href="mailto:(*comment_email*)"></a>
+                                                    </check:if>
+                                                </div>
+                                            </div>
+                                            <div class="question-body">
+                                                <a target="_blank" href="<check:if comment_website>(*comment_website*)</check:if>"><img alt="(*comment_fullname*)" src="(*comment_avatar*)"></a>
+                                                <div class="dialogbox">
+                                                    <div class="body">
+                                                        <span class="tip tip-right"></span>
+                                                        <div class="message">
+                                                            <span>(*comment_body*)</span>
+                                                            <div class="question-name">(*comment_fullname*)</div>
+                                                            <div class="question-date">(*comment_date*)</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <check:if comment_reply>
+                                        <div class="answer">
+                                            <img alt="(*comment_reply_avatar*)" src="(*comment_reply_avatar*)">
+                                            <div class="dialogbox">
+                                                <div class="body">
+                                                    <span class="tip tip-left"></span>
+                                                    <div class="message">
+                                                        <span>پاسخ</span>
+                                                        <p>(*comment_reply_text*)</p>
+                                                        <div class="question-name">(*comment_reply_fullname*)</div>
+                                                        <div class="question-date">(*comment_reply_date*)</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </check:if>
+                                </view:page_comments>
+                            </box:page_comments>
+                        </div>
+                        <check:if page_has_send_comment>
+                            <div class="comment-add-form">(*comment_add_form*)</div>
+                        </check:if>
+                    </box:page_detail>
+                </div>
+                <!--end of page content--><!--}}}-->
+                <!--start of sidebar--><!--{{{-->
+                <div class="four columns">
+                    <div class="sidebar">
+                        <check:if blog_description> <!--{{{-->
+                        <div id="side-profile">
+                            <span>(*blog_description*)</span>
+                            <div class="fellowship">
+                                <a href="http://blog.ir/panel/-/followed_blogs?follow=asemanam.blog.ir" target="_blank"><div class="fellowsheep">این وبلاگ را دنبال کنید</div></a>
+                            </div>
+                            <div id="side-follow"></div>
+                        </div>
+                        </check:if> <!--}}}-->
+                        <box:authors> <!--{{{-->
+                        <div class="side-pages">
+                        <h3>نویسندگان</h3>
+                          <view:authors>
+                            <div class="page-name">
+                              <a href="(*author_link*)"> (*author_name*) </a>
+                            </div>
+                          </view:authors>
+                        </div>
+                        </box:authors> <!--}}}-->
+                        <box:menu> <!--{{{-->
+                          <div class="side-pages">
+                            <h3>صفحات</h3>
+                                <view:menu>
+                                    <div class="page-name">
+                                        <a href="(*menu_item_link*)">(*menu_item_title*)</a>
+                                    </div>
+                                </view:menu>
+                          </div>
+                        </box:menu> <!--}}}-->
+            <box:tag_cloud max="25"> <!--{{{-->
+              <div class="side-pages">
+                <h3>برچسب‌ها</h3>
+                <ul class="tagCloud">
+                  <view:tag_cloud>
+                    <li>
+                      <a href="(*tag_link*)">
+                        (*tag_name*)
+                      </a>
+                    </li>
+                  </view:tag_cloud>
+                </ul>
+              </div>
+            </box:tag_cloud> <!--}}}-->
+            <box:ads> <!--{{{-->
+              <div class="side-pages">
+                <h3>تبلیغات</h3>
+                <view:ads>
+                  (*ad*)
+                </view:ads>
+              </div>
+            </box:ads> <!--}}}-->
+                    <!--latest-posts--><!--{{{-->
+                        <box:recent_posts>
+                        <div class="side-pages">
+                        <h3>تازه‌ها</h3>
+                          <view:recent_posts max="5">
+                            <div class="page-name">
+                              <a href="(*post_link*)"> (*post_title*)</a>
+                            </div>
+                          </view:recent_posts>
+                        </div>
+                        </box:recent_posts>
+                    <!--recent-posts--><!--}}}-->
+                    <!--popular-posts--><!--{{{-->
+                        <box:popular_posts>
+                        <div class="side-pages">
+                        <h3>محبوب‌ترین‌ها</h3>
+                          <view:popular_posts max="5">
+                            <div class="page-name">
+                              <a href="(*post_link*)"> (*post_title*) </a>
+                            </div>
+                          </view:popular_posts>
+                        </div>
+                        </box:popular_posts>
+                    <!--recent-posts--><!--}}}-->
+                    <!--most-visited-posts--><!--{{{-->
+                        <box:most_visited_posts>
+                        <div class="side-pages">
+                        <h3>پربازدیدترین‌ها</h3>
+                          <view:most_visited_posts max="5">
+                            <div class="page-name">
+                              <a href="(*post_link*)"> (*post_title*) </a>
+                            </div>
+                          </view:most_visited_posts>
+                        </div>
+                        </box:most_visited_posts>
+                    <!--recent-posts--><!--}}}-->
+                    <!--most-commented-posts--><!--{{{-->
+                        <box:most_commented_posts>
+                        <div class="side-pages">
+                        <h3>پربحث‌ترین‌ها</h3>
+                          <view:most_commented_posts max="5">
+                            <div class="page-name">
+                              <a href="(*post_link*)"> (*post_title*)</a>
+                            </div>
+                          </view:most_commented_posts>
+                        </div>
+                        </box:most_commented_posts>
+                    <!--recent-posts--><!--}}}-->
+                        <box:archive> <!--{{{-->
+                          <div id="side-archive">
+                            <h3>بایگانی</h3>
+                                <view:archive>
+                                    <div class="archive-name">
+                                        <a target="_blank" href="(*link_url*)">(*link_name*)</a>
+                                    </div>
+                                </view:archive>
+                          </div>
+                        </box:archive> <!--}}}-->
+                        <box:stat> <!--{{{-->
+                          <div id="side-stat">
+                            <h3>آمار بازدید</h3>
+                                <view:stat>
+                                    <div class="stat-name">
+                                        <div class="stat1">(*stat_title*)</div>
+                                        <div class="stat2">(*stat_value*)</div>
+                                    </div>
+                                </view:stat>
+                          </div>
+                        </box:stat> <!--}}}-->
+                        <box:daily_links> <!--{{{-->
+                          <div id="side-day-links">
+                            <h3>پیوندهای روزانه</h3>
+                                <view:daily_links>
+                                    <div class="daily-links-name">
+                                        <a target="_blank" alt="(*link_alt*)" href="(*link_url*)">(*link_name*)</a>
+                                    </div>
+                                </view:daily_links>
+                          </div>
+                        </box:daily_links> <!--}}}-->
+                        <box:links> <!--{{{-->
+                          <div id="side-links">
+                            <h3>پیوندها</h3>
+                                <view:links>
+                                    <div class="links-name">
+                                        <a target="_blank" alt="(*link_alt*)" href="(*link_url*)">(*link_name*)</a>
+                                    </div>
+                                </view:links>
+                          </div>
+                        </box:links> <!--}}}-->
+                    </div>
+                </div>
+            </div>
+        </div>
+                <!--end of sidebar--><!--}}}-->
+        <!--start of footer--><!--{{{-->
+        <footer>
+            <div class="container">
+                <div class="row" style="margin-top: .8em; margin-bottom: .7em;">
+                    <div class="six columns copyright">
+                        <div id="freetheme">
+                            <p>قدرت گرفته از</p>
+                            <a href="http://blog.ir"><p>بلاگ</p></a>
+                            <a href="http://bayan.ir"><div id="mimr">بیان</div></a>
+                        </div>
+                    </div>
+                    <div class="five columns">
+                        <div id="freetheme">
+                            <p>ساخته‌ای برآمده از</p>
+                            <span>♥</span>
+                            <p>توسط</p>
+                            <a href="https://asemanam.blog.ir"><div id="mimr">محمدرضا ...</div></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--end of footer--><!--}}}-->
+  </body>
+<!--END OF BODY--><!--}}}-->
+</html>
