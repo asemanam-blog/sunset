@@ -894,6 +894,21 @@ span.pagination {
     .two.columns {
       width: 100%;
     }
+    .category-nav {
+        position: unset;
+    }
+    .category-nav a {
+        box-sizing: border-box;
+        display: block;
+        padding: 5px;
+        border-bottom: 1px dotted black;
+    }
+    .category-nav i {
+        display: none;
+    }
+    .dialogbox {
+        max-width: 70%;
+    }
  }
 
 /* Base Stylesâ€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
@@ -1191,21 +1206,6 @@ pre, dl, figure, table, p, ul, ol, form {
         position: unset;
 	color: white;
         padding: unset;
-    }
-    .category-nav {
-        position: unset;
-    }
-    .category-nav a {
-        box-sizing: border-box;
-        display: block;
-        padding: 5px;
-        border-bottom: 1px dotted black;
-    }
-    .category-nav i {
-        display: none;
-    }
-    .dialogbox {
-        max-width: 70%;
     }
 }
 /* Larger than desktop */
