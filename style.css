@@ -627,15 +627,15 @@ span.pagination {
 .body .message {
     min-height: 30px;
     border-radius: 3px;
-    font-family: Arial;
-    font-size: 14px;
-    line-height: 1.5;
+    font-family: Gandom, serif;
+    font-size: 15px;
+    line-height: 1.9em;
     color: #797979;
 }
 .message span {
     color: black;
     display: block;
-    font-family: yekan, Gandom, serif;
+    font-family: Gandom, serif;
     margin-bottom: 5px;
 }
 .answer .message span {
@@ -653,8 +653,9 @@ span.pagination {
 .message p {
     color: black;
     display: block;
-    font-family: yekan, Gandom, serif;
+    font-family: Gandom, serif;
     margin-bottom: 5px;
+    line-height: 1.9em;
 }
 .message {
     direction: rtl;
